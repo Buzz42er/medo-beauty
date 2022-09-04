@@ -1,0 +1,43 @@
+@import "./singleValues";
+
+// text -------------------------------------------------------------------------------
+@mixin h1 {
+    font-size: 10vh;
+    font-family: $primary-font;
+    font-weight: bold;
+
+}
+
+@mixin paragraphFontLight {
+    font-size: 2vh;
+    font-family: $primary-font;
+    color: $primary-light-color;
+
+}
+
+@mixin paragraphFontDark {
+    font-size: 2vh;
+    font-family: $primary-font;
+    color: $primary-dark-color;
+}
+
+// background ---------------------------------------------------------------------------
+@mixin backgroundLightColor {
+    background-color: $bg-light-1;
+}
+
+@mixin backgroundLightColor2 {
+    background-color: $bg-light-2;
+}
+
+@mixin backgroundLightWhite {
+    background-color: white;
+}
+
+@mixin backgroundDarkColor {
+    background-color: rgb(72, 41, 17);
+}
+
+@mixin backgroundDarkLighter {
+    background-color: rgb(65, 10, 10);
+}

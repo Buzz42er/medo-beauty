@@ -1,0 +1,131 @@
+@import './mixins';
+@import './singleValues';
+
+* {
+    @include paragraphFontLight;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav > a {
+    text-decoration: none;
+    
+
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav > a:hover { 
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+
+}
+
+nav > a:active {
+        border: transparent;
+        border-radius: 10px;
+        box-shadow: 0 0 5px gray;
+
+        background-color: $bg-light-1;
+        color: $primary-dark-color;
+    }
+
+.Landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url('') ;
+    padding: 50px;
+}
+
+h1 {
+    @include h1;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: $bg-light-2;
+
+    font-size: 4vh;
+}
+
+.services > h2 {
+    color: $primary-dark-color;
+}
+
+h3 {
+    padding: 0 20px;
+    color: $primary-dark-color;
+    font-size: 3vh;
+}
+
+h4 {
+    padding: 0 20px;
+}
+
+span {
+    padding: 0 30px;
+    color: $primary-light-color;
+}
+
+button {
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: transparent;
+
+    color: $primary-dark-color;
+    background-color: $bg-light-2;
+    box-shadow: 0 0 5px gray;
+}
+
+.services {
+    background-color: $bg-light-1;
+    padding: 20px 0;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.About > p {
+    padding: 0 30px;
+}
+
+.imgDiv {
+    border: transparent;
+    border-radius: 20px;
+    margin: 20px;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+}
+
+footer {
+    box-shadow: 0 -3px 5px  rgba(128, 128, 128, 0.789);
+
+    background-color: $bg-light-2;
+    padding: 50px;
+}
+
+footer > span {
+    color: $primary-dark-color;
+}
