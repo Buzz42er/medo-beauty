@@ -3,7 +3,18 @@
 
 * {
     @include paragraphFontLight;
-    
+    // background-color: rgba(0, 255, 255, 0.273);
+}
+
+.HeaderDiv {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+}
+
+hr { 
+    margin-bottom: 0;
 }
 
 header {
@@ -11,7 +22,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+}
 
+.logo {
+    margin: 5px 30px;
 }
 
 nav {
@@ -48,13 +62,15 @@ nav > a:active {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 70vh;
 
     background-image: url('') ;
-    padding: 50px;
+
 }
 
 h1 {
     @include h1;
+
 }
 
 h2 {
@@ -62,21 +78,27 @@ h2 {
     justify-content: center;
     color: $bg-light-2;
 
-    font-size: 4vh;
+    font-size: 6vh;
+}
+
+.services {
+
 }
 
 .services > h2 {
     color: $primary-dark-color;
+
 }
 
 h3 {
     padding: 0 20px;
     color: $primary-dark-color;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 h4 {
     padding: 0 20px;
+    font-size: 3vh;
 }
 
 span {
@@ -87,11 +109,21 @@ span {
 button {
     padding: 10px 40px;
     border-radius: 10px;
+    margin: 5px 5px;
     border: transparent;
 
     color: $primary-dark-color;
     background-color: $bg-light-2;
     box-shadow: 0 0 5px gray;
+}
+
+button:hover {
+    background-color: #ab3e3e;
+}
+
+button:active {
+
+    padding: 15px 45px;
 }
 
 .services {
@@ -102,11 +134,39 @@ button {
 .service {
     display: flex;
     flex-direction: column;
+    width: 50%;
     
+    
+}
+
+.sizesSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+}
+
+.sizesSection > div {
+    display: flex;
+    width: 100%;
+    
+}
+
+.sizesHeadings {
+    display: flex;
+    justify-content: start;
+    width: 100%;
 }
 
 .About > p {
     padding: 0 30px;
+}
+
+.nailsExamples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgDiv {
@@ -128,4 +188,44 @@ footer {
 
 footer > span {
     color: $primary-dark-color;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+            margin: 20px 0px;
+        }
+
+    .HeaderDiv {
+            width: 100%;
+            background-color: white;
+            position: relative;
+            top: 0px;
+    }
+    
+
+    nav {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .Landing {
+        height: 70vh;
+    }
+
+    .sizesHeadings {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .service {
+        width: auto;
+    }
+    
+    .sizesSection {
+        min-width: 0;
+    }
 }

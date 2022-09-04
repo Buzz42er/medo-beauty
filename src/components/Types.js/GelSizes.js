@@ -3,8 +3,12 @@ import React from "react";
 const GelSizes = (props) => {
   return (
     <div>
-      {props.size}
-      {props.image}
+      <div className="sizesHeadings">
+        <h4>{props.size}</h4>
+      </div>
+      <div className="nailsExamples">
+        <div className="imgDiv">{props.img}</div>
+      </div>
     </div>
   );
 };

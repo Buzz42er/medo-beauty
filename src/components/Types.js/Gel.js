@@ -2,18 +2,22 @@ import React, { useState } from "react";
 import GelSizes from "./GelSizes";
 
 const Gel = () => {
-  const [sizes, setSizes] = useState(["Gel S", "Gel M", "Gle L", "Gel XL"]);
+  const [sizes, setSizes] = useState([
+    { size: "Gel S" },
+    { size: "Gel M" },
+    { size: "Gle L" },
+    { size: "Gel XL" },
+  ]);
   const [nails, setNails] = useState([]);
 
-  const reSize = sizes.map((size) => <h4>{size}</h4>);
-  const image = sizes.map((img) => <div className="imgDiv">{img}</div>);
+  const reSize = sizes.map((size) => <GelSizes key={size.id} {...size} />);
 
   return (
-    <div className="">
-      <h3>Nokti s gelom</h3>
-      <section className="service">
-        <GelSizes size={reSize} image={image} />
-      </section>
+    <div className="sizesSection">
+      <div>
+        <h3>Nokti s gelom</h3>
+      </div>
+      <section className="service">{reSize}</section>
     </div>
   );
 };
