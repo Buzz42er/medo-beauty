@@ -64,8 +64,10 @@ nav > a:active {
     flex-direction: column;
     height: 70vh;
 
-    background-image: url('') ;
-
+    background-image: url("../../components/img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -81,9 +83,9 @@ h2 {
     font-size: 6vh;
 }
 
-.services {
+// .services {
 
-}
+// }
 
 .services > h2 {
     color: $primary-dark-color;
@@ -135,6 +137,9 @@ button:active {
     display: flex;
     flex-direction: column;
     width: 50%;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
     
     
 }
@@ -213,6 +218,7 @@ footer > span {
 
     .Landing {
         height: 70vh;
+        background-image: url('../../components/img/backgroundMob.png');
     }
 
     .sizesHeadings {

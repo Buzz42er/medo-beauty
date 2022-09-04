@@ -61,7 +61,10 @@ nav > a:active {
   align-items: center;
   flex-direction: column;
   height: 70vh;
-  background-image: url("");
+  background-image: url("../../components/img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -125,6 +128,9 @@ button:active {
   display: flex;
   flex-direction: column;
   width: 50%;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
 
 .sizesSection {
@@ -194,6 +200,7 @@ footer > span {
   }
   .Landing {
     height: 70vh;
+    background-image: url("../../components/img/backgroundMob.png");
   }
   .sizesHeadings {
     display: flex;

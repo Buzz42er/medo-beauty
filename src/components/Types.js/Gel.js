@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import GelSizes from "./GelSizes";
 
 const Gel = () => {
-  const [sizes, setSizes] = useState([
+  const sizes = [
     { size: "Gel S" },
     { size: "Gel M" },
     { size: "Gle L" },
     { size: "Gel XL" },
-  ]);
-  const [nails, setNails] = useState([]);
+  ];
+  // const [nails, setNails] = useState([]);
 
-  const reSize = sizes.map((size) => <GelSizes key={size.id} {...size} />);
+  const reSize = sizes.map((size) => <GelSizes key={size} {...size} />);
 
   return (
     <div className="sizesSection">
