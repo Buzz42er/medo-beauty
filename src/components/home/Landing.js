@@ -1,10 +1,12 @@
 import React from "react";
 
-const Landing = () => {
+const Landing = (props) => {
   return (
     <div className="Landing">
       <h1>Medo Beauty</h1>
-      <button>Login</button>
+      <a className="login" href="/login">
+        Login
+      </a>
     </div>
   );
 };

@@ -8,6 +8,10 @@
   color: rgb(49, 49, 49);
 }
 
+.App {
+  padding-top: 70px;
+}
+
 .HeaderDiv {
   width: 100%;
   background-color: white;
@@ -101,21 +105,23 @@ span {
   color: rgb(49, 49, 49);
 }
 
-button {
-  padding: 10px 40px;
+.login {
+  padding: 12px 40px;
   border-radius: 10px;
   margin: 5px 5px;
   border: transparent;
+  text-decoration: none;
+  font-size: 20px;
   color: white;
   background-color: #a74e4e;
   box-shadow: 0 0 5px gray;
 }
 
-button:hover {
+.login:hover {
   background-color: #ab3e3e;
 }
 
-button:active {
+.login:active {
   padding: 15px 45px;
 }
 
@@ -183,6 +189,9 @@ footer > span {
 }
 
 @media screen and (max-width: 600px) {
+  .App {
+    padding-top: 0px;
+  }
   .logo {
     margin: 20px 0px;
   }

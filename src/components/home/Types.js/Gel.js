@@ -15,7 +15,7 @@ const Gel = () => {
   return (
     <div className="sizesSection">
       <div>
-        <h3>Nokti s gelom</h3>
+        <h3>Gel</h3>
       </div>
       <section className="service">{reSize}</section>
     </div>

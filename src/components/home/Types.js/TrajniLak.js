@@ -9,7 +9,7 @@ const TrajniLak = () => {
   return (
     <div className="sizesSection">
       <div>
-        <h3>Nokti s trajnim lakom</h3>
+        <h3>Trajni Lak</h3>
       </div>
       <section className="service">{reSize}</section>
     </div>
